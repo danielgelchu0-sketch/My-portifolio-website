@@ -1,9 +1,9 @@
-function Card({ children, className = "" }) {
+function Badge({ children }) {
   return (
-    <div className={`bg-surface border border-border rounded-xl p-6 hover:bg-surface-hover transition-colors ${className}`}>
+    <span className="inline-block px-2.5 py-1 rounded-md text-xs font-mono bg-accent-muted text-accent-hover">
       {children}
-    </div>
+    </span>
   );
 }
 
-export default Card;
+export default Badge;
