@@ -1,9 +1,12 @@
-function Badge({ children }) {
+function SectionHeading({ eyebrow, title }) {
   return (
-    <span className="inline-block px-2.5 py-1 rounded-md text-xs font-mono bg-accent-muted text-accent-hover">
-      {children}
-    </span>
+    <div className="mb-10">
+      {eyebrow && (
+        <p className="text-sm font-mono text-accent mb-2">{eyebrow}</p>
+      )}
+      <h2 className="text-2xl md:text-3xl font-bold text-text-primary">{title}</h2>
+    </div>
   );
 }
 
-export default Badge;
+export default SectionHeading;
