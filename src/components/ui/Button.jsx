@@ -3,8 +3,8 @@ function Button({ children, variant = "primary", ...props }) {
 
   const variants = {
     primary: "bg-accent text-white hover:bg-accent-hover",
-    outline: "border border-border text-text-primary hover:border-accent hover:text-accent",
-    ghost: "text-text-secondary hover:text-text-primary",
+    outline: "bg-transparent border border-border text-text-primary hover:border-accent hover:text-accent",
+    ghost: "bg-transparent text-text-secondary hover:text-text-primary",
   };
 
   return (
