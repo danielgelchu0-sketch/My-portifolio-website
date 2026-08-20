@@ -1,25 +1,25 @@
-import Button from "./components/ui/Button";
-import Card from "./components/ui/Card";
-import Badge from "./components/ui/Badge";
-import SectionHeading from "./components/ui/SectionHeading";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import Hero from "./components/sections/Hero";
+import About from "./components/sections/About";
+import Projects from "./components/sections/Projects";
+import Skills from "./components/sections/Skills";
+import Education from "./components/sections/Education";
+import Contact from "./components/sections/Contact";
 
 function App() {
   return (
-    <div className="min-h-screen bg-background p-10">
-      <SectionHeading eyebrow="01 / Preview" title="Design System Check" />
-      <div className="flex gap-4 mb-6">
-        <Button>Primary</Button>
-        <Button variant="outline">Outline</Button>
-        <Button variant="ghost">Ghost</Button>
-      </div>
-      <Card className="max-w-md">
-        <p className="text-text-secondary mb-3">Card content sample</p>
-        <div className="flex gap-2">
-          <Badge>React</Badge>
-          <Badge>Node.js</Badge>
-          <Badge>PostgreSQL</Badge>
-        </div>
-      </Card>
+    <div className="min-h-screen bg-background text-text-primary flex flex-col font-sans selection:bg-accent/30 selection:text-white">
+      <Navbar />
+      <main className="flex-1">
+        <Hero />
+        <About />
+        <Projects />
+        <Skills />
+        <Education />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
